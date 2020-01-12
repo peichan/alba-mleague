@@ -29,6 +29,7 @@
 .result-rank-item {
   padding-top: 10px;
   justify-content: center;
+  align-items: center;
   display: flex;
 }
 
@@ -56,4 +57,16 @@
 .result-rank-score {
   width: 100px;
   text-align: right;
+}
+
+.day-result {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #007f31;
+  display: inline-block;
+}
+
+.day {
+  font-size: 1rem;
 }
