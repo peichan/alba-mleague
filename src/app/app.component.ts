@@ -16,11 +16,17 @@ class DayResult {
     this.results = results;
   }
   isValid() {
-    return true;  // TODO: 実装
+    return this.results.reduce((sum, r) => sum + r.point, 0) == (this.results.length * 10);
   }
 }
 
 const dayResults: DayResult[] = [
+// new DayResult("1/26 (日)", [
+//   new Result("足立 真陽", 0),
+//   new Result("石橋 享典", 0),
+//   new Result("北口 善紀", 0),
+//   new Result("清水 明彦", 0)
+// ]),
   new DayResult("1/13 (月)", [
     new Result("北口 善紀", 73),
     new Result("網 亮太朗", 33),
@@ -40,6 +46,9 @@ const dayResults: DayResult[] = [
 function calcRanking(dayResults: DayResult[]): Result[] {
   let playerPoints = {};
   for (const dayResult of dayResults) {
+    if (!dayResult.isValid()) {
+      throw new Error("invalid score in DayResult: " + dayResult.day);
+    }
     for (const result of dayResult.results) {
       if (result.player in playerPoints) {
         playerPoints[result.player] += result.point;
