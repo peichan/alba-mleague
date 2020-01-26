@@ -21,12 +21,12 @@ class DayResult {
 }
 
 const dayResults: DayResult[] = [
-// new DayResult("1/26 (日)", [
-//   new Result("足立 真陽", 0),
-//   new Result("石橋 享典", 0),
-//   new Result("北口 善紀", 0),
-//   new Result("清水 明彦", 0)
-// ]),
+  new DayResult("1/26 (日)", [
+    new Result("竹澤 亮", 265),
+    new Result("北口 善紀", 204),
+    new Result("清水 明彦", -206.5),
+    new Result("足立 真陽", -222.5)
+  ]),
   new DayResult("1/13 (月)", [
     new Result("北口 善紀", 73),
     new Result("網 亮太朗", 33),
@@ -34,12 +34,12 @@ const dayResults: DayResult[] = [
     new Result("足立 真陽", -46)
   ]),
   new DayResult("1/12 (日)", [
-    new Result("足立 真陽", 305.5),
-    new Result("北口 善紀", 262.5),
+    new Result("足立 真陽", 292.5),
+    new Result("北口 善紀", 212),
     new Result("清水 明彦", -47.5),
-    new Result("網 亮太朗", -80),
-    new Result("石橋 享典", -91),
-    new Result("金子 侑起", -289.5)
+    new Result("石橋 享典", -54),
+    new Result("網 亮太朗", -72.5),
+    new Result("金子 侑起", -270.5)
   ])
 ];
 
