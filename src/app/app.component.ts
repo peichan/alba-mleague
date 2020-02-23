@@ -22,10 +22,10 @@ class DayResult {
 
 const dayResults: DayResult[] = [
   new DayResult("2/22 (土)", [
-    new Result("竹澤 亮", 333),
-    new Result("足立 真陽", 55),
-    new Result("清水 貴大", -163),
-    new Result("清水 明彦", -185)
+    new Result("竹澤 亮", 403),
+    new Result("足立 真陽", -22),
+    new Result("清水 明彦", -147),
+    new Result("清水 貴大", -194)
   ]),
   new DayResult("2/11 (火)", [
     new Result("北口 善紀", 219.5),
