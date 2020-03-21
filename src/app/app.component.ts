@@ -21,6 +21,13 @@ class DayResult {
 }
 
 const dayResults: DayResult[] = [
+  new DayResult("3/21 (土)", [
+    new Result("足立 真陽", 171),
+    new Result("北口 善紀", 136),
+    new Result("金子 侑起", 89),
+    new Result("竹澤 亮", -157),
+    new Result("清水 貴大", -189)
+  ]),
   new DayResult("3/20 (金)", [
     new Result("北口 善紀", 233.5),
     new Result("金子 侑起", 30.5),
