@@ -395,10 +395,14 @@ export class AppComponent implements OnInit {
     this.router.events.subscribe(val => {
       if (val instanceof RoutesRecognized) {
         this.quarter = val.state.root.firstChild.params.quarter;
-        if (!(this.quarter in quarterResults)) {
-          this.quarter = "2020Q2";
+        if (this.quarter) {
+          if (!(this.quarter in quarterResults)) {
+            this.quarter = "2020Q2";
+          }
+          this.dayResults = quarterResults[this.quarter];
+        } else {
+          this.dayResults = [].concat(...Object.values(quarterResults));
         }
-        this.dayResults = quarterResults[this.quarter];
         this.ranking = calcRanking(this.dayResults);
       }
     });
