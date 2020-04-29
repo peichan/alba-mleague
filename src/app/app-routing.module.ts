@@ -5,7 +5,8 @@ import { AppComponent } from './app.component';
 const routes: Routes = [
   { path: '', redirectTo: '/ranking/2020Q2', pathMatch: 'full' },
   { path: 'ranking', component: AppComponent },
-  { path: 'ranking/:quarter', component: AppComponent }
+  { path: 'ranking/:quarter', component: AppComponent },
+  { path: 'ranking/2020Q2', redirectTo: '/ranking/2020Q2', pathMatch: 'full' }
 ];
 
 @NgModule({
